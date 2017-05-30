@@ -11,7 +11,7 @@
  */
 $versionFile = __DIR__ . '/VERSION';
 $versionChoco = rtrim(file_get_contents($versionFile));
-$versionGithub = rtrim(file_get_contents('https://raw.githubusercontent.com/cloudfoundry/cli/master/VERSION'));
+$versionGithub = rtrim(file_get_contents('https://raw.githubusercontent.com/cloudfoundry/cli/master/ci/VERSION'));
 if ($versionChoco == $versionGithub) {
     echo "Everything up-to-date.";
     exit(0);
